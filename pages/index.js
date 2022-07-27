@@ -89,6 +89,9 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
           )
         })}
       </div>
+      <div className='text-columbia-blue'>
+        Auto updates every 5 minutes.
+      </div>
     </div>
   )
 }
