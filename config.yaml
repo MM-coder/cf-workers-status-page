@@ -1,7 +1,7 @@
 settings:
   title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
-  logo: logo-192x192.png # image in ./public/ folder
+  url: 'https://status.maurom.dev' # used for Slack messages
+  logo: icon.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
@@ -27,9 +27,17 @@ monitors:
   - id: transcript-system # unique identifier
     name: transcript.maurom.dev
     description: 'Overwatch Transcript System.' # default=empty
-    url: 'https://transcript.maurom.dev/direct' # URL to fetch
+    url: 'https://transcript.maurom.dev/direct?link=https://cdn.discordapp.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
+  - id: transcript-proxy-system # unique identifier
+    name: proxy.maurom.dev
+    description: 'Transcript System Proxy.' # default=empty
+    url: 'https://transcript.maurom.dev/direct?link=https://cdn.discordapp.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
