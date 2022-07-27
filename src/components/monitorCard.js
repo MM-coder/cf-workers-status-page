@@ -7,7 +7,7 @@ const infoIcon = (
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 20 20"
     fill="currentColor"
-    className="h-5 mr-2 mx-auto text-blue-500 dark:text-blue-400"
+    className="h-5 mx-auto mr-2 text-blue-500 dark:text-columbia-blue"
   >
     <path
       fillRule="evenodd"
@@ -20,12 +20,12 @@ const infoIcon = (
 export default function MonitorCard({ key, monitor, data }) {
   return (
     <div key={key} className="card">
-      <div className="flex flex-row justify-between items-center mb-2">
+      <div className="flex flex-row items-center justify-between mb-2">
         <div className="flex flex-row items-center align-center">
           {monitor.description && (
             <div className="tooltip">
               {infoIcon}
-              <div className="content text-center transform -translate-y-1/2 top-1/2 ml-8 w-72 text-sm object-left">
+              <div className="object-left ml-8 text-sm text-center transform -translate-y-1/2 content top-1/2 w-72">
                 {monitor.description}
               </div>
             </div>
@@ -50,7 +50,7 @@ export default function MonitorCard({ key, monitor, data }) {
 
       <MonitorHistogram monitorId={monitor.id} kvMonitor={data} />
 
-      <div className="flex flex-row justify-between items-center text-gray-400 text-sm">
+      <div className="flex flex-row items-center justify-between text-sm text-columbia-blue">
         <div>{config.settings.daysInHistogram} days ago</div>
         <div>Today</div>
       </div>
