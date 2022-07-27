@@ -67,10 +67,10 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
           `}
         </script>
       </Head>
-      <div className="container mx-auto px-4">
-        <div className="flex flex-row justify-between items-center p-4">
+      <div className="container px-4 mx-auto">
+        <div className="flex flex-row items-center justify-between p-4">
           <div className="flex flex-row items-center">
-            <img className="h-8 w-auto" src={config.settings.logo} />
+            <img className="w-auto h-8" src={config.settings.logo} />
             <h1 className="ml-4 text-3xl">{config.settings.title}</h1>
           </div>
           <div className="flex flex-row items-center">
@@ -88,26 +88,6 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
             />
           )
         })}
-        <div className="flex flex-row justify-between mt-4 text-sm">
-          <div>
-            Powered by{' '}
-            <a href="https://workers.cloudflare.com/" target="_blank">
-              Cloudflare Workers{' '}
-            </a>
-            &{' '}
-            <a href="https://flareact.com/" target="_blank">
-              Flareact{' '}
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://github.com/eidam/cf-workers-status-page"
-              target="_blank"
-            >
-              Get Your Status Page
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   )

@@ -28,6 +28,10 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+      'space-blue': '#081421',
+      'oxford-blue': '#0C1E31',
+      'light-cyan': '#6EA4BF',
+      'columbia-blue': '#AACADA'
     },
     spacing: {
       px: '1px',

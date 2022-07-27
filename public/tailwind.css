@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-50;
+    @apply text-gray-700 bg-gray-100 dark:bg-space-blue dark:text-gray-50;
   }
 
   a {
@@ -14,15 +14,15 @@
 
 @layer components {
   .card {
-    @apply p-4 bg-white border border-gray-200 dark:bg-gray-700 dark:border-gray-600 shadow rounded-lg p-4 mb-2;
+    @apply p-4 mb-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-oxford-blue;
   }
 
   .pill {
-    @apply px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full;
+    @apply inline-flex px-2 py-1 text-xs font-semibold leading-5 rounded-full;
   }
 
   .histogram {
-    @apply h-6 w-full mx-auto;
+    @apply w-full h-6 mx-auto;
   }
   .hitbox {
     align-items: flex-end;
@@ -33,7 +33,7 @@
     border-radius: 3.75px;
   }
   .bar {
-    @apply bg-gray-300 dark:bg-gray-600;
+    @apply bg-gray-300 dark:bg-light-cyan;
     padding-bottom: 1px;
     height: 100%;
     width: 85%;
@@ -57,12 +57,12 @@
   }
 
   .tooltip .content {
-    @apply invisible absolute z-50 inline-block;
-    @apply rounded-lg py-1 px-2 bg-gray-100 dark:bg-gray-800 shadow;
-    @apply opacity-0 transition-all duration-200 scale-50;
+    @apply absolute z-50 invisible inline-block;
+    @apply px-2 py-1 bg-gray-100 rounded-lg shadow dark:bg-oxford-blue;
+    @apply transition-all duration-200 scale-50 opacity-0;
   }
 
   .tooltip:hover .content {
-    @apply visible opacity-100 scale-100;
+    @apply visible scale-100 opacity-100;
   }
 }
