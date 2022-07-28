@@ -89,9 +89,12 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
           )
         })}
       </div>
-      <div className='text-columbia-blue'>
-        Auto updates every 5 minutes.
-      </div>
+      <div className="flex flex-row justify-between mt-4 text-sm">
+          <div>
+            <span className='text-columbia-blue'>Website Updates Every 5 Minutes</span>
+          </div>
+          
+        </div>
     </div>
   )
 }
