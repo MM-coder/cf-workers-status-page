@@ -50,3 +50,13 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
+
+  - id: us2-node # unique identifier
+    name: 'California Node #1'
+    description: 'Node used for proxying & redundancy and other services.' # default=empty
+    url: 'https://us2.maurom.dev/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+
